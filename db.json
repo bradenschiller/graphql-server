@@ -1,7 +1,12 @@
 {
   "users": [
-    { "id": "100", "firstName": "Braden Schiller", "age": 23 },
-    { "id": "101", "firstName": "Mark Zuch", "age": 34 },
-    { "id": "102", "firstName": "Kelly Anderews", "age": 62 }
+    { "id": "23", "firstName": "Braden", "age": 23, "companyId": "1" },
+    { "id": "145", "firstName": "Mark", "age": 34, "companyId": "1" },
+    { "id": "89", "firstName": "Kelly", "age": 62, "companyId": "2" }
+  ],
+
+  "companies": [
+    { "id": "1", "name": "Apple", "description": "Iphone" },
+    { "id": "2", "name": "Microsoft", "description": "Widndows" }
   ]
 }
