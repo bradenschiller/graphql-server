@@ -1,0 +1,7 @@
+{
+  "users": [
+    { "id": "100", "firstName": "Braden Schiller", "age": 23 },
+    { "id": "101", "firstName": "Mark Zuch", "age": 34 },
+    { "id": "102", "firstName": "Kelly Anderews", "age": 62 }
+  ]
+}
