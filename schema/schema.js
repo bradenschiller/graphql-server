@@ -5,6 +5,16 @@ const axios = require('axios')
 // uses all special type calling and objects from graphql
 const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema } = graphql
 
+// * sub type of user this is companys. You can imagine that all types are set up this way ***hint***
+const CompanyType = new GraphQLObjectType({
+  name: 'Company',
+  fields: {
+    id: { type: GraphQLString },
+    name: { type: GraphQLString },
+    description: { type: GraphQLString },
+  },
+})
+
 // * creates a user type from graphql object = {UserType}, name is user and fields are described followed by types using the graphql package
 const UserType = new GraphQLObjectType({
   name: 'User',
@@ -12,6 +22,7 @@ const UserType = new GraphQLObjectType({
     id: { type: GraphQLString },
     firstName: { type: GraphQLString },
     age: { type: GraphQLInt },
+    company: { type: CompanyType },
   },
 })
 
